@@ -33,15 +33,15 @@
 		<!--bloco titulo da aplicação-->
 		<nav>
 			<div class="nav-wrapper purple darken-4">
-			  <a href="#" class="brand-logo">Concrete<!--<img src="img/logo.png">--></a>
-			  <a ng-click="mobileMenu.active()" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-			  <ul class="right hide-on-med-and-down">
+			  <a href="#" class="brand-logo"><img src="img/logo.png" class="logo-img"></a>
+			  <a ng-click="mobileMenu.open()" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			  <ul class="right hide-on-med-and-down" >
 				<li><a href="#/popular" >Popular</a></li>
 				<li><a href="#/everyone">Todos</a></li>
 				<li><a href="#/debuts">Estréias</a></li>
 				
 			  </ul>
-			  <ul class="side-nav" id="mobile-demo" ng-mouseleave="mobileMenu.close()" >
+			  <ul class="side-nav" id="mobile-demo"  ng-click="mobileMenu.close()" ng-mouseleave="mobileMenu.close()" >
 				<li><a href="#/popular">Popular</a></li>
 				<li><a href="#/everyone">Todos</a></li>
 				<li><a href="#/debuts">Estréias</a></li>

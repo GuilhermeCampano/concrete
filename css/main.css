@@ -5,43 +5,83 @@
 	width: 100%;
 }
 
-.card .card-image .card-title{width:100%}
+.card .card-image .card-title{
+	width:100%; 
+	font-size: 19px;
+}
+
+.card .card-image .card-title{
+	padding-left:7px!important;
+}
+
+img.logo-img{
+	width:100%;
+}
 
 @media(min-width:720px){
-.row .col.l3{width:32%;}
-.row .col.offset-l1{margin-left: 1.33333%;}
+.row .col.l3{
+	width:32%;
+}
+.row .col.offset-l1{
+	margin-left: 1.33333%;
+}
 
 }
 
 @media(max-width: 719px) {
-.row .col.m4{width: 100%;}
-/*.row .col.offset-m1{  margin-left: 5.33333%;}*/
+.row .col.m4{
+	width: 100%;
+}
+
 
 }
 
-.ng-binding{ float:left; padding-right:2px;}
+.ng-binding{ 
+	float:left; 
+	padding-right:2px;
+}
 
-.black-text.one{font-size:22px; font-weight:bold;}
+.black-text.one{
+	font-size:22px; 
+	font-weight:bold;
+}
 
-.midias-line{color:#666; border-bottom:1px solid #ccc; line-height:50px;}
+.midias-line{
+	color:#666; 
+	border-bottom:1px solid #ccc; 
+	line-height:50px;
+}
 
-.pagination li{line-height:30px;margin:0 7px!important;}
+.pagination li{
+	line-height:30px;
+	margin:0 7px!important;
+}
 
-.pagination li.active{color:#fff;}
+.pagination li.active{
+	color:#fff;
+}
 
-.pagination li i{line-height: 2rem;}
+.pagination li i{
+	line-height: 2rem;
+}
 
-i.right{margin-top: -15px;}
+i.right{
+	margin-top: -15px;
+}
 
 .side-nav{
 	left:-105%;
 	transition: left .25s linear;
 }
-.side-nav.active{left:0}
+.side-nav.active{
+	left:0
+}
 
 .side-nav li:hover, .side-nav li.active {
   background-color: #ede7f6;
   
 }
 
-nav .brand-logo{padding-left:10px;}
+nav .brand-logo{
+	padding-left:10px;
+}
