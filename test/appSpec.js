@@ -15,6 +15,7 @@ describe('Verificando service dribbble ', function(){
 
 });
 
+/*
 //===== MainController =====//
 describe('Verificando MainController', function() {
   beforeEach(module('ConcreteApp'));
@@ -31,5 +32,5 @@ describe('Verificando MainController', function() {
    });	
   
 });
-
+*/
 
