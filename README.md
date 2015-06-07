@@ -10,7 +10,7 @@ Previw do projeto:
 https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 
 Obs: Devido a mistura de contéudo de HTTPS (servidor github) com HTTP (api do dribbbble),
- só é possível ver o projeto funcionando somente no FireFox:
+ só é possível ver o projeto funcionando no FireFox:
 
 
 
