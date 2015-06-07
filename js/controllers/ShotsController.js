@@ -1,4 +1,5 @@
-app.controller('ShotsController', function($scope, dribbble, $routeParams){ 
+app.controller('ShotsController', function($scope, $routeParams, dribbbleApi){ 
+
 
 //===========PRIVATE=========//
 var list = $routeParams.list;
@@ -30,18 +31,24 @@ var list = $routeParams.list;
 	};
 	
 	//Chamar api apos carregar pagina
-	$scope.list = shotsApi.data
+	dribbbleApi.list(list).then(function (data){
+		$scope.list = data.data;
+	});
+	
 	
 	
 	//paginar
 	$scope.nextPage = function(refPage){
 		var newActivePage = parseInt($scope.list.page) + refPage;
-        dribbble.list(list, {page: newActivePage }).then(function(data) {
+        dribbbleApi.list(list, {page: newActivePage }).then(function(data) {
 			if(newActivePage<=0) return false;
 			$scope.pagination.setActivePage( newActivePage );
             $scope.list.page = data.data.page;
 			$scope.list.shots = data.data.shots;
         });
     }
+	
+	
+
   
 });

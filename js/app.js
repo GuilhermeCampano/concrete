@@ -12,10 +12,8 @@ app.config(['$routeProvider',
         templateUrl: 'js/partials/popular.html',
         controller: 'ShotsController',
 		resolve: {
-            shotsApi: function (dribbble) {
-				dribbble.list(list).then(function (data){
-                    return data;
-               });
+            dribbbleApi : function ($http, dribbble ) {
+				return dribbble;
             }
 		}
     })
