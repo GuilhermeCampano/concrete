@@ -18,7 +18,6 @@ app.config(['$routeProvider',
         controller: 'ShotsController',
 		resolve: {
             dribbbleApi : function ($http, dribbble ) {
-				console.log(dribbble);
 				return dribbble;
             }
 		}
