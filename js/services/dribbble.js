@@ -8,7 +8,7 @@ app.service('dribbble', ['$http', function($http) {
     function load(path, params) {
         params = params || {};
         params.callback = "JSON_CALLBACK"
-        //return $http.jsonp('http://api.dribbble.com' + path , {params: params})
+        return $http.jsonp('http://api.dribbble.com' + path , {params: params})
     }
 
     return {
