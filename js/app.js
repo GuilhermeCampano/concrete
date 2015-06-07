@@ -11,10 +11,9 @@ app.config(['$routeProvider',
     .when('/:list', {
         templateUrl: 'js/partials/popular.html',
         controller: 'ShotsController'
-    });
-	/*
+    })
     .otherwise({
         redirectTo: '/popular'
-    });*/
+    });
 }]);
  
