@@ -1,4 +1,4 @@
-app.controller('ShotController', function($scope, dribbble, $routeParams, $sce) { 
+app.controller('ShotController', function($scope, dribbbleApi, $routeParams, $sce) { 
 	
 	//único shot
 	var id = $routeParams.id;

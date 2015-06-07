@@ -6,7 +6,12 @@ app.config(['$routeProvider',
     $routeProvider.
     when('/shot/:id', {
         templateUrl: 'js/partials/shot.html',
-        controller: 'ShotController'
+        controller: 'ShotController',
+		resolve: {
+            dribbbleApi : function ($http, dribbble ) {
+				return dribbble;
+            }
+		}
 	})
     .when('/:list', {
         templateUrl: 'js/partials/popular.html',
