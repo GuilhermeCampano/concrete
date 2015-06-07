@@ -2,7 +2,7 @@ app.controller('ShotController', function($scope, dribbbleApi, $routeParams, $sc
 	
 	//único shot
 	var id = $routeParams.id;
-    dribbble.shot(id).then(function (data){
+    dribbbleApi.shot(id).then(function (data){
         $scope.shot = data.data;
 		$scope.shot.description =  $sce.trustAsHtml($scope.shot.description);
     });
