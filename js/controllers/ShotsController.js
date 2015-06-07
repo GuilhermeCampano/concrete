@@ -32,10 +32,9 @@ var list = $routeParams.list;
 	//Chamar api apos carregar pagina
 	angular.element(document).ready(function () {
     //listagem de todos
-		/*
 		dribbble.list(list).then(function (data){
 			$scope.list = data.data;
-		});*/
+		});
 	});
 	
 	
@@ -49,8 +48,5 @@ var list = $routeParams.list;
 			$scope.list.shots = data.data.shots;
         });
     }
-	
-	
-
   
 });
