@@ -13,7 +13,9 @@ https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 ==============
 
 Bibliotecas usadas:
+
 AngularJS https://angularjs.org/
+
 MaterializeCSS http://materializecss.com/
 
 ==============
