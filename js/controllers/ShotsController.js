@@ -29,10 +29,14 @@ var list = $routeParams.list;
 		}
 	};
 	
-	//listagem de todos
-    dribbble.list(list).then(function (data){
-        $scope.list = data.data;
-    });
+	//Chamar api apos carregar pagina
+	angular.element(document).ready(function () {
+    //listagem de todos
+		dribbble.list(list).then(function (data){
+			$scope.list = data.data;
+		});
+	});
+	
 	
 	//paginar
 	$scope.nextPage = function(refPage){
