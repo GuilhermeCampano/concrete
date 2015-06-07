@@ -6,14 +6,18 @@ Teste para Concrete Solutions http://www.concretesolutions.com.br/
 Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 
 ==============
-Previw do projeto pelo Github:
+
+Previw do projeto pelo Plunker: 
+http://embed.plnkr.co/omjp3UB1PPe4rl5v5yUl
+
+Previw do projeto pelo Github *:
 https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 
-Obs: Devido a mistura de contéudo de HTTPS (servidor github) com HTTP (api do dribbbble),
+* Devido a mistura de contéudo de HTTPS (servidor github) com HTTP (api do dribbbble),
  só é possível ver o projeto funcionando no FireFox.
  
  
-Previw do projeto pelo Plunker: http://embed.plnkr.co/omjp3UB1PPe4rl5v5yUl
+
  
  
 ==============
