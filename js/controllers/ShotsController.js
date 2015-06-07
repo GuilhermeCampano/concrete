@@ -30,7 +30,7 @@ var list = $routeParams.list;
 		}
 	};
 	
-	/*
+	
 	//Chamar api apos carregar pagina
 	dribbbleApi.list(list).then(function (data){
 		$scope.list = data.data;
@@ -49,7 +49,7 @@ var list = $routeParams.list;
         });
     }
 	
-	*/
+	
 
   
 });
