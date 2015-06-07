@@ -7,7 +7,7 @@ Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 
 ==============
 
-Preview do projeto (recomendado abrir no FireFox):
+Preview do projeto (funcionando somente no FireFox):
 https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 
 ==============
