@@ -1,3 +1,8 @@
+/* 
+	API para consult 
+	https://dribbble.com/api/deprecated
+*/
+
 'use strict';
 app.factory('dribbble', ['$http', function($http) {
     function load(path, params) {

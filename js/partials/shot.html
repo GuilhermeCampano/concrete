@@ -1,0 +1,42 @@
+		
+		<!-- card do shoot-->
+		
+		<div class="row">
+			<!--avatar do usuário-->
+			<div class="col s4 m2 l2"> 
+			  <img src="{{shot.player.avatar_url}}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			</div>
+						
+			<!--nome do usuário-->
+			<div class="col s8 m10 l10">  
+				<div class="col s12"><span class="black-text one">{{shot.title}}</span></div>
+		        <div class="col s12"><span class="black-text">
+					por {{shot.player.name}} {{shot.created_at | date:'HH:mm:ss' }}
+		         </span>
+				</div> 
+			</div>
+		
+		</div>
+
+		<div class="row">
+			<div class="card col s12 m7 l7 " ng-hide="shot.image_url =='' ">
+				<div class="card-image">
+					<img src="{{shot.image_url}}" alt="Description"/>
+					
+				</div>				
+		    </div>
+			
+			<div class="col s12 offset-s0 m4 offset-m1 l4 offset-l1 ">
+				<div class="col s12 midias-line"><i class="tiny mdi-action-favorite"></i> {{shot.likes_count}} like</div>
+				<div class="col s12 midias-line"><i class="tiny mdi-action-visibility"></i> {{shot.views_count}} visualizações</div>
+				<div class="col s12 midias-line"><i class="tiny mdi-communication-comment"></i> {{shot.comments_count}} comentários</div>
+			</div>	
+			
+        </div><!-- cards-->
+		
+		<hr>
+		<!--descrição da postagem-->
+		<div class="row">
+			<div  class="col s12" ng-bind-html="shot.description "></div>
+		</div>
+		

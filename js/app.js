@@ -1,10 +1,19 @@
 
-var app = angular.module('ConcreteApp', []);
+var app = angular.module('ConcreteApp',['ngRoute']);
 
-/*
-app.config(function($routeProvider){
-    $routeProvider
-    .when("/shot/:id", {controller:"ShotController", templateUrl: "partials/shot.html"})
-    .otherwise({controller:"MainController", templateUrl: "partials/popular.html"})
-});
-*/
+app.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+    when('/shot/:id', {
+        templateUrl: 'js/partials/shot.html',
+        controller: 'ShotController'
+	})
+    .when('/:list', {
+        templateUrl: 'js/partials/popular.html',
+        controller: 'ShotsController'
+    })
+    .otherwise({
+        redirectTo: '/popular'
+    });
+}]);
+ 
