@@ -1,11 +1,10 @@
 app.controller('ShotsController', function($scope, $routeParams, dribbbleApi){ 
 
 
-//===========PRIVATE=========//
-var list = $routeParams.list;
+	//===========PRIVATE=========//
+	var list = $routeParams.list;
 	
-//===========PUBLIC==========//
-	
+	//===========PUBLIC==========//
 	//função que esconde elemento olhando para os pais
 	$scope.hideByClassName=function($event,tagClass){
 		var element=$event.target; // DOM

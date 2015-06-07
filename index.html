@@ -7,6 +7,12 @@
 	
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<!--Jasmine-->
+	<link data-require="jasmine@*" data-semver="2.2.1" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.2.1/jasmine.css" />
+    <script data-require="jasmine@*" data-semver="2.2.1" src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.2.1/jasmine.js"></script>
+    <script data-require="jasmine@*" data-semver="2.2.1" src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.2.1/jasmine-html.js"></script>
+    <script data-require="jasmine@*" data-semver="2.2.1" src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.2.1/boot.js"></script>
+	
 	<!-- Bibilioteca css do materialize -->
 	<link href="lib/css/materialize.css" rel="stylesheet" />
 	
@@ -27,7 +33,7 @@
 		<!--bloco titulo da aplicação-->
 		<nav>
 			<div class="nav-wrapper purple darken-4">
-			  <a href="#" class="brand-logo"><img src="img/logo.png"></a>
+			  <a href="#" class="brand-logo">Concrete<!--<img src="img/logo.png">--></a>
 			  <a ng-click="mobileMenu.active()" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 			  <ul class="right hide-on-med-and-down">
 				<li><a href="#/popular" >Popular</a></li>
@@ -54,7 +60,8 @@
 	
 	<!-- biblioteca ANGULAR-->
     <script src="lib/js/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+	<script src="lib/js/angular-route.js"></script>
+	<script src="lib/js/angular-mocks.js"></script>
 	
 	<!--Jquery-->
 	<script src="lib/js/jquery.min.js"></script>
@@ -64,6 +71,7 @@
 	
     <!-- Modules -->
     <script src="js/app.js"></script>
+	<script src="test/appSpec.js"></script>
 
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
