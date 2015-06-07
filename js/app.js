@@ -10,7 +10,14 @@ app.config(['$routeProvider',
 	})
     .when('/:list', {
         templateUrl: 'js/partials/popular.html',
-        controller: 'ShotsController'
+        controller: 'ShotsController',
+		resolve: {
+            shotsApi: function (dribbble) {
+				dribbble.list(list).then(function (data){
+                    return data;
+               });
+            }
+		}
     })
     .otherwise({
         redirectTo: '/popular'

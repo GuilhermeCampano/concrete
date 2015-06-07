@@ -30,12 +30,7 @@ var list = $routeParams.list;
 	};
 	
 	//Chamar api apos carregar pagina
-	angular.element(document).ready(function () {
-    //listagem de todos
-		dribbble.list(list).then(function (data){
-			$scope.list = data.data;
-		});
-	});
+	$scope.list = shotsApi.data
 	
 	
 	//paginar
