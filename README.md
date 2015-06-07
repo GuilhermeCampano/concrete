@@ -10,11 +10,11 @@ Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 Previw do projeto pelo Plunker: 
 http://embed.plnkr.co/omjp3UB1PPe4rl5v5yUl
 
-Previw do projeto pelo Github *:
+Previw do projeto pelo Github :
 https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 
-* Devido a mistura de contéudo de HTTPS (servidor github) com HTTP (api do dribbbble),
- só é possível ver o projeto funcionando no FireFox.
+obs: Através da segunda opção ,preview github, só é possível vizualizar funcionando corretamente pelo FireFox devido a mistura de contéudo de HTTPS (servidor github) com HTTP (api do dribbbble).
+
  
  
 
