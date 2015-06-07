@@ -4,7 +4,7 @@
 */
 
 'use strict';
-app.factory('dribbble', ['$http', function($http) {
+app.service('dribbble', ['$http', function($http) {
     function load(path, params) {
         params = params || {};
         params.callback = "JSON_CALLBACK"
