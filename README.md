@@ -12,6 +12,11 @@ https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
 
 ==============
 
+Para usar o projeto local é necessário um servidor como por exemplo:
+Node.js, wamp(apache) e etc..
+
+==============
+
 Bibliotecas usadas:
 
 AngularJS https://angularjs.org/
