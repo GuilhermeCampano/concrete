@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+	<title>Concrete</title>
+	<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bibilioteca css do materialize -->
+	<link href="lib/css/materialize.css" rel="stylesheet" />
+	
+	<!-- CSS da aplicação -->
+	<link href="css/scroll-bar.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+	
+  </head>
+  
+
+ <body ng-app="ConcreteApp">
+ 
+    <div class="main" ng-controller="MainController"> 
+		
+      <div class="container">
+        
+		<!--bloco titulo da aplicação-->
+		<div class="row">
+          <div class="col s12 m6 offset-m4 l6 offset-l5">
+           <h2>Concrete</h2>
+          </div>
+        </div>
+			
+		<hr>
+		
+		<!-- Paginação-->
+		<div class="row">
+			<ul class="pagination col s12 m9 offset-m3  l6 offset-l4 ">
+				<li class="waves-effect"><a ng-click="nextPage(-1)"><i class="mdi-navigation-chevron-left"></i></a></li>
+				<li class="waves-effect" ng-click="nextPage(-2)" ng-hide="(pagination.activePage)-2 <= 0 "> {{ (pagination.activePage)-2 }} </li>
+				<li class="waves-effect" ng-click="nextPage(-1)" ng-hide="(pagination.activePage)-1 <= 0 "> {{ (pagination.activePage)-1 }} </li>
+				<li class="active blue lighten-5" ng-click="nextPage(0)">{{pagination.activePage}}</li>
+				<li class="waves-effect" ng-click="nextPage(1)" ng-hide=""> {{ (pagination.activePage)+1 }}</li>
+				<li class="waves-effect" ng-click="nextPage(2)" ng-hide=""> {{ (pagination.activePage)+2 }}</li>
+				<li class="waves-effect" ng-click="nextPage(3)" ng-hide="( (pagination.activePage-1 > 0) || (pagination.activePage+3 > 10) )"> {{ (pagination.activePage)+3 }} </li>
+				<li class="waves-effect" ng-click="nextPage(4)" ng-hide="( (pagination.activePage-2 > 0) || (pagination.activePage+4 > 10) )"> {{ (pagination.activePage)+4 }} </li>
+				<li class="waves-effect"><a ng-click="nextPage(1)"><i class="mdi-navigation-chevron-right"></i></a></li>
+			</ul>
+		</div> <!-- Paginação-->
+		
+		<!-- cards-->
+		<div class="row">
+			<div class="card col s12 m5 offset-m1 l3 offset-l1 " ng-repeat="shot in list.shots" ng-hide="shot.image_teaser_url =='' ">
+				<div class="card-image waves-effect waves-block waves-light">
+				  <a ng-href="{{shot.short_url}}" target="_blank">
+					  <img src="{{shot.image_teaser_url}}" alt="Description"/>
+					  <span class="card-title">{{shot.title}}</span>
+				  </a>
+				  
+				</div>
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+				  <div><i class="tiny mdi-action-favorite"></i> {{shot.likes_count}}</div>
+				  <div><i class="tiny mdi-action-visibility"></i> {{shot.views_count}}</div>
+				  <div><i class="mdi-communication-comment"></i> {{shot.comments_count}}</div>
+				</div>
+				<div class="card-reveal">
+					
+					<div class="row valign-wrapper">
+						
+						<!--avatar do usuário-->
+						<div class="col s3"> 
+						  <img src="{{shot.player.avatar_url}}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+						</div>
+						
+						<!--nome do usuário-->
+						<div class="col s8">  
+						  <span class="black-text">
+							{{shot.player.name}}
+						  </span>
+						</div>
+						
+						<!--icone para fechar -->
+						<div class="col s1" ng-click="hideByClassName($event,'card-reveal')"> 
+							<i class="mdi-navigation-close right"></i>
+						</div>
+						
+					</div>
+					
+					<hr>
+					
+					<!--descrição da postagem-->
+					<div class="col s12" html="shot.description"></div>		
+					
+				</div>
+		    </div>
+        </div><!-- cards-->
+	
+		
+	
+		
+		
+		
+      </div> <!--.container-->
+    </div> <!--.main-->
+	
+	<!-- biblioteca ANGULAR-->
+    <script src="lib/js/angular.min.js"></script>
+	
+	<!--Jquery-->
+	<script src="lib/js/jquery.min.js"></script>
+	
+	<!-- Bibilioteca js do materialize -->
+	<script src="lib/js/materialize.min.js"></script>
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Services -->
+	<script src="js/services/dribbble.js"></script>
+ 
+    <!-- Directives -->
+	<script src="js/directives/html.js"></script>
+
+
+  </body>
+</html>
