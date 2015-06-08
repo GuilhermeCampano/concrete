@@ -30,32 +30,34 @@
  
     <div class="main" ng-controller="MainController"> 
 		
-		<!--bloco titulo da aplicação-->
-		<nav>
-			<div class="nav-wrapper purple darken-4">
-			  <a href="#" class="brand-logo"><img src="img/logo.png" class="logo-img"></a>
-			  <a ng-click="mobileMenu.open()" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-			  <ul class="right hide-on-med-and-down" >
-				<li><a href="#/popular" >Popular</a></li>
-				<li><a href="#/everyone">Todos</a></li>
-				<li><a href="#/debuts">Estréias</a></li>
-				
-			  </ul>
-			  <ul class="side-nav" id="mobile-demo"  ng-click="mobileMenu.close()" ng-mouseleave="mobileMenu.close()" >
-				<li><a href="#/popular">Popular</a></li>
-				<li><a href="#/everyone">Todos</a></li>
-				<li><a href="#/debuts">Estréias</a></li>
-			  </ul>
-			</div>
-		</nav>
+		<!--bloco menu de navegação-->
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper purple darken-4">
+				  <a href="#" class="brand-logo"><img src="img/logo.png" class="logo-img"></a>
+				  <a ng-click="mobileMenu.open()" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				  <ul class="right hide-on-med-and-down" >
+					<li><a href="#/popular" >Popular</a></li>
+					<li><a href="#/everyone">Todos</a></li>
+					<li><a href="#/debuts">Estréias</a></li>
+					
+				  </ul>
+				  <ul class="side-nav" id="mobile-demo"  ng-click="mobileMenu.close()" ng-mouseleave="mobileMenu.close()" >
+					<li><a href="#/popular">Popular</a></li>
+					<li><a href="#/everyone">Todos</a></li>
+					<li><a href="#/debuts">Estréias</a></li>
+				  </ul>
+				</div>
+			</nav>
+		</div>
 		
 				
-      <div class="container section">
-        
-							
-		<div ng-view></div>
+		<div class="container section">
+        	
+			<!-- contéudo parcial-->
+			<div ng-view></div>
 		
-      </div> <!--.container-->
+		</div> <!--.container-->
     </div> <!--.main-->
 	
 	<!-- biblioteca ANGULAR-->
