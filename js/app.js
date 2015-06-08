@@ -8,18 +8,18 @@ app.config(['$routeProvider',
         templateUrl: 'js/partials/shot.html',
         controller: 'ShotController',
 		resolve: {
-            dribbbleApi : function ($http, dribbble ) {
+            		dribbbleApi : function ($http, dribbble ) {
 				return dribbble;
-            }
+            		}
 		}
 	})
     .when('/:list', {
         templateUrl: 'js/partials/popular.html',
         controller: 'ShotsController',
 		resolve: {
-            dribbbleApi : function ($http, dribbble ) {
+            		dribbbleApi : function ($http, dribbble ) {
 				return dribbble;
-            }
+        		 }
 		}
     })
     .otherwise({
