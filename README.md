@@ -26,7 +26,7 @@ Jasmine http://jasmine.github.io/
 ==============
 Melhorias a serem feitas:
 
-Verificar erro no consumo de uma api http em um servidor https chrome.
+Verificar erro no consumo de uma api http em um servidor https.
 
 Na barra de navegação marcar o filtro selecionado.
 
