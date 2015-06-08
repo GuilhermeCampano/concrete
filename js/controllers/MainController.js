@@ -1,6 +1,6 @@
 app.controller('MainController', function($scope, $http) { 
   
-  
+  //função para  abrir e fechar menu mobile
   $scope.mobileMenu = {
 	
 	mobileMenu : document.getElementById("mobile-demo"),
