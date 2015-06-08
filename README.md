@@ -32,3 +32,7 @@ Verificar erro no consumo de uma api http em um servidor https.
 
 Na barra de navegação marcar o filtro selecionado.
 
+==============
+
+Bonus, teste de como ficaria uma versão Android deste projeto:
+https://github.com/GuilhermeCampano/concrete/blob/master/bonus/concrete_android_teste.apk?raw=true
