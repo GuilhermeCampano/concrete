@@ -34,10 +34,7 @@ Jasmine http://jasmine.github.io/
 ==============
 Melhorias a serem feitas:
 
-Verificar erro da ordem de consumo da api que ocorre no chrome
+Verificar erro no consumo de uma api http em um servidor https chrome.
 
-Organizar o CSS
+Na barra de navegação marcar o filtro selecionado.
 
-Na barra de navegação marcar o filtro selecionado
-
-Exibir erro caso não consiga carregar API
