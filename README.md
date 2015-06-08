@@ -17,7 +17,6 @@ Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 
 ==============
 
-
 Bibliotecas usadas:
 
 AngularJS https://angularjs.org/
