@@ -1,4 +1,14 @@
 
+Descrição:
+Está aplicação consome uma API do https://dribbble.com/, e exibe os projetos, em cards, com suas respecitvas informações. 
+
+Preview do projeto pelo Plunker: 
+http://embed.plnkr.co/UckjVHVoEzKsqNP5yju7
+
+Para usar o projeto local é necessário um servidor como por exemplo:
+Node.js, wamp(apache) e etc..
+
+
 ==============
 
 Teste para Concrete Solutions http://www.concretesolutions.com.br/
@@ -7,13 +17,6 @@ Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 
 ==============
 
-Preview do projeto pelo Plunker: 
-http://embed.plnkr.co/UckjVHVoEzKsqNP5yju7
-
-Para usar o projeto local é necessário um servidor como por exemplo:
-Node.js, wamp(apache) e etc..
-
-==============
 
 Bibliotecas usadas:
 
