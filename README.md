@@ -8,7 +8,7 @@ Copyright (C) 2015, Guilherme Campano <guilherme_campano@yahoo.com.br>
 ==============
 
 Preview do projeto pelo Plunker: 
-http://embed.plnkr.co/omjp3UB1PPe4rl5v5yUl
+http://embed.plnkr.co/UckjVHVoEzKsqNP5yju7
 
 Preview do projeto pelo Github :
 https://rawgit.com/GuilhermeCampano/concrete/master/index.html#/popular
