@@ -1,12 +1,11 @@
 app.controller('ShotsController', function($scope, $routeParams, dribbbleApi){ 
 
 
-	//===========PRIVATE=========//
+	
 	
 	//recebe valores para filtro (popular, estreias, todos)
 	var list = $routeParams.list;
 	
-	//===========PUBLIC==========//
 	
 	//função que esconde elemento olhando para os pais
 	$scope.hideByClassName=function($event,tagClass){
